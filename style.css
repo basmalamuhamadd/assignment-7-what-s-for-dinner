@@ -1,0 +1,133 @@
+.logo-icon i {
+  color: white;
+  font-size: 22px;
+}
+
+.icon-btn i {
+  font-size: 20px;
+}
+
+* { box-sizing: border-box; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: white;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.logo-text p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  color: #1f2937;
+  cursor: pointer;
+  display: flex;
+  transition: background 0.2s;
+}
+
+.icon-btn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #78350f;
+  cursor: pointer;
+}
+body{
+    background-color:#FFFBEA ;} 
+
+
+:root { --accent:#e8731a; --accent-dark:#cf6210; --accent-soft:#fdeede; --ink:#1c2233; }
+    body { background:linear-gradient(135deg,#eef2fb,#dbe6f6); min-height:100vh; color:var(--ink); }
+
+    .recipe-card { border:0; border-radius:1.5rem; overflow:hidden; background:rgba(255,255,255,.55);
+                   backdrop-filter:blur(8px); box-shadow:0 12px 40px rgba(30,50,90,.15); }
+
+    /* image side */
+    .hero { position:relative; height:100%; min-height:460px; border-radius:1.25rem; overflow:hidden;
+            background:#ddd; }
+    .rating { position:absolute; top:1rem; left:1rem; padding:.5rem .9rem; }
+    .stats { position:absolute; left:1rem; right:1rem; bottom:1rem; }
+    .stats i { font-size:1.4rem; color:var(--accent); }
+    @media (max-width:991.98px){ .hero{ min-height:320px; } }
+
+    /* tags + buttons */
+    .tag { font-weight:600; padding:.4em .9em; }
+    .tag-easy { background:#d8f3e4; color:#187a48; }
+    .tag-italian { background:#dbe8fd; color:#1f5fc9; }
+    .btn-accent { background:var(--accent); color:#fff; font-weight:600; border:0; border-radius:.75rem;
+                  box-shadow:0 6px 16px rgba(232,115,26,.35); transition:transform .15s, background .15s; }
+    .btn-accent:hover { background:var(--accent-dark); color:#fff; transform:translateY(-1px); }
+    .btn-soft { background:var(--accent-soft); color:var(--accent); border:0; border-radius:.75rem; width:2.6rem; height:2.6rem; }
+    .btn-soft:hover, .btn-soft.active { background:var(--accent); color:#fff; }
+    .btn:focus-visible, .nav-link:focus-visible { outline:3px solid rgba(232,115,26,.5); outline-offset:2px; }
+
+    /* tabs */
+    .nav-tabs { border-bottom:1px solid #d5dcea; flex-wrap:nowrap; overflow-x:auto; overflow-y:hidden; }
+    .nav-tabs .nav-link { color:#555; border:0; border-bottom:2px solid transparent; white-space:nowrap; margin-bottom:-1px; }
+    .nav-tabs .nav-link:hover { color:var(--accent); }
+    .nav-tabs .nav-link.active { color:var(--accent); background:transparent; border-bottom-color:var(--accent); }
+
+    /* tab content */
+    .tab-body { min-height:280px; max-height:340px; overflow-y:auto; padding-right:.5rem; }
+    .tab-body::-webkit-scrollbar { width:6px; }
+    .tab-body::-webkit-scrollbar-thumb { background:#f0b993; border-radius:6px; }
+    .num { width:2.2rem; height:2.2rem; border-radius:.7rem; background:var(--accent); color:#fff;
+           display:inline-flex; align-items:center; justify-content:center; font-weight:700; flex:none; }
+    .num.sm { width:1.5rem; height:1.5rem; border-radius:50%; font-size:.75rem; }
+    .ingredients-box { background:rgba(233, 227, 227, 0.5); border-radius:1rem; padding:1.25rem; }
+    .tip { background:linear-gradient(90deg,#fdf0d5,#fdf7ea); border-left:3px solid #f1b24a; border-radius:.75rem; }
+    .tip i { color:var(--accent); }
+    .nutri { background:rgba(255,255,255,.65); border-radius:.9rem; }
+    .nutri .ico { width:2.3rem; height:2.3rem; border-radius:.7rem; display:flex; align-items:center; justify-content:center; }
+
+    @media (prefers-reduced-motion:reduce){ .btn-accent{ transition:none; } .fade{ transition:none; } }

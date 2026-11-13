@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's For Dinner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+  <div class="logo">
+    <div class="logo-icon">
+      <i class="fa-solid fa-utensils"></i>
+    </div>
+    <div class="logo-text">
+      <h1>What's For Dinner</h1>
+      <p>Your daily meal inspiration</p>
+    </div>
+  </div>
+
+  <div class="nav-actions">
+    <button class="icon-btn" title="Saved"><i class="fa-solid fa-bookmark"></i></button>
+    <button class="icon-btn" title="History"><i class="fa-solid fa-clock-rotate-left"></i></button>
+    <button class="icon-btn" title="Settings"><i class="fa-solid fa-gear"></i></button>
+    <img class="avatar" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Profile">
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container py-4 py-md-5">
+  <div class="card recipe-card">
+    <div class="row g-0">
+ 
+      <!-- Left: image -->
+      <div class="col-lg-5 p-3">
+        <div class="hero">
+           <img src="photo-1509722747041-616f39b57569.jpg" alt="Caprese Sandwich" class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover;">
+          <span class="badge rounded-pill bg-white text-dark fs-6 fw-normal rating shadow-sm">
+            <i class="bi bi-star-fill text-warning"></i> 4.5 <small class="text-muted">(189 reviews)</small>
+          </span>
+          <div class="stats bg-white rounded-4 shadow-sm p-3">
+            <div class="row text-center">
+              <div class="col"><i class="bi bi-clock-fill"></i><div class="small text-muted">Prep Time</div><strong>10 min</strong></div>
+              <div class="col"><i class="bi bi-fire"></i><div class="small text-muted">Cook Time</div><strong>5 min</strong></div>
+              <div class="col"><i class="bi bi-people-fill text-primary"></i><div class="small text-muted">Servings</div><strong>2 people</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Right: details -->
+      <div class="col-lg-7 bg-white bg-opacity-50 p-4 p-md-5 d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <span class="badge rounded-pill tag tag-easy">Easy</span>
+            <span class="badge rounded-pill tag tag-italian">Italian</span>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-soft" aria-label="Save" onclick="this.classList.toggle('active')"><i class="bi bi-bookmark-fill"></i></button>
+            <button class="btn btn-soft" aria-label="Share"><i class="bi bi-share-fill"></i></button>
+          </div>
+        </div>
+ 
+        <h1 class="fw-bold mt-2">Caprese Sandwich</h1>
+        <p class="text-secondary">Fresh Italian sandwich with mozzarella, tomato, and basil</p>
+ 
+        <ul class="nav nav-tabs nav-fill mb-3" role="tablist">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ingredients"><i class="bi bi-list-check"></i> Ingredients</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#instructions"><i class="bi bi-journal-bookmark-fill"></i> Instructions</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#nutrition"><i class="bi bi-pie-chart-fill"></i> Nutrition</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tips"><i class="bi bi-lightbulb-fill"></i> Chef's Tips</button></li>
+        </ul>
+ 
+        <div class="tab-content tab-body flex-grow-1">
+          <div class="tab-pane fade show active" id="ingredients">
+            <div class="ingredients-box"><ul class="list-unstyled d-grid gap-3 mb-0" id="ingredients-list"></ul></div>
+          </div>
+          <div class="tab-pane fade" id="instructions">
+            <ol class="list-unstyled d-grid gap-4 mb-0" id="steps-list"></ol>
+          </div>
+          <div class="tab-pane fade" id="nutrition">
+            <div class="row g-3" id="nutrition-list"></div>
+          </div>
+          <div class="tab-pane fade" id="tips">
+            <div class="d-grid gap-3" id="tips-list"></div>
+          </div>
+        </div>
+ 
+        <hr>
+        <div><button class="btn btn-accent px-4 py-2"><i class="bi bi-arrow-repeat"></i> Try Another Recipe</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
